@@ -1,0 +1,16 @@
+package ex_safe_call_operator
+
+// 멤버함수 예제의 building 클래스 재활용
+import ex_member_function.building
+
+fun main(args:Array<String>) {
+    var obj: building? = null
+    obj?.print()
+    obj?.name = "건물"
+
+    obj = building()
+    obj?.name = "서울월드컵경기장"
+    obj?.date = "2001년 11월 10일"
+    obj?.area = 21_6712
+    obj?.print()
+}
